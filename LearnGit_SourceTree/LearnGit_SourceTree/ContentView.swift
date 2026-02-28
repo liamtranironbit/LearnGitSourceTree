@@ -9,7 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        GitCommandListView()
+        TabView {
+            GitCommandListView()
+                .tabItem {
+                    Label("Git Commands", systemImage: "terminal.fill")
+                }
+            
+            SourceTreeBasicsView()
+                .tabItem {
+                    Label("SourceTree", systemImage: "point.3.connected.trianglepath.dotted")
+                }
+            
+            TaskChecklistView()
+                .tabItem {
+                    Label("Checklist", systemImage: "checklist")
+                }
+        }
+        .tint(.orange)
     }
 }
 

@@ -123,6 +123,14 @@ let gitCategories: [GitCategory] = [
             GitCommand(command: "git tag", description: "Tạo, liệt kê hoặc xoá tag", example: "git tag v1.0\ngit tag -a v1.0 -m \"Version 1.0\""),
             GitCommand(command: "git push --tags", description: "Đẩy tất cả tag lên remote", example: "git push --tags"),
         ]
+    ), GitCategory(
+        name: "Test",
+        icon: "tag.fill",
+        color: .pink,
+        commands: [
+            GitCommand(command: "git test", description: "Tạo, liệt kê hoặc xoá tag", example: "git tag v1.0\ngit tag -a v1.0 -m \"Version 1.0\""),
+            GitCommand(command: "git push --tags", description: "Đẩy tất cả tag lên remote", example: "git push --tags"),
+        ]
     ),
 ]
 
